@@ -25,4 +25,32 @@
                         | you got money from work in accont
             .noti-foot.text-center: a(href="#") View All Notifications
     i.fas.fa-expand-alt.fa-lg.toggle-fullscreen.header-icon
-    
+    .dropdown.usermenu-container
+        .username#usermenu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            img.avatar.rounded-circle(src="img/person1.jpg", alt="")
+            span.user ali soliman
+            i.fas.fa-angle-down.fa-lg
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+            .user-info
+                h3 Ali Soliman
+                p Premium Member
+            hr
+            ul.avtivities-list.list-unstyled
+                li Added Comment on Post "How to Make bla bla bla"
+                li Created Post on Category "Science"
+                li Created Chart on Charts Page
+                li Added Comment on Post "How to Make bla bla bla two"
+            hr
+            .row.usermenu-links
+                .col
+                    .link-box 
+                        i.fas.fa-cog.fa-lg.fa-fw
+                        span Settings
+                .col
+                    .link-box 
+                        i.far.fa-user.fa-lg.fa-fw
+                        span My Profile
+                .col
+                    .link-box 
+                        i.fas.fa-power-off.fa-lg.fa-fw
+                        span Logout

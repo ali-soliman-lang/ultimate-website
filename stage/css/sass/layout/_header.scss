@@ -76,4 +76,72 @@
       }
     }
   }
+  .usermenu-container {
+    float: right;
+    .username {
+      cursor: pointer;
+      .avatar {
+        width: 40px;
+        height: 40px;
+      }
+      .user {
+        font-weight: bold;
+        color: #777;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+    .dropdown-menu {
+      min-width: 600px;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px #ddd;
+      padding: 20px;
+      top: 10px !important;
+      &:before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: 40px;
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent transparent #ddd transparent;
+      }
+      .user-info {
+        h3 {
+          font-weight: bold;
+        }
+        p {
+          color: #888;
+        }
+      }
+      .avtivities-list {
+        li {
+          padding: 10px;
+        }
+      }
+      .usermenu-links {
+        .link-box {
+          background: #eee;
+          padding: 10px 15px;
+          border-radius: 6px;
+          text-align: right;
+          margin-right: 20px;
+          i {
+            float: left;
+            position: relative;
+            top: 5px;
+            &.fa-cog {
+              color: #2980b9;
+            }
+            &.fa-user {
+              color: #16a085;
+            }
+            &.fa-power-off {
+              color: #c0392b;
+            }
+          }
+        }
+      }
+    }
+  }
 }
