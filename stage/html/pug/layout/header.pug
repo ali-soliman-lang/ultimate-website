@@ -1,2 +1,26 @@
 .header 
     i.fas.fa-exchange-alt.fa-lg.toggle-sidebar
+    .dropdown.notifications-container
+        i.fas.fa-bell.fa-lg.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        .dropdown-menu(aria-labelledby='notifications')
+            .noti-head
+                | Notifications
+                span 50
+            .noti-content 
+                ul.list-unstyled
+                    li
+                        i.far.fa-envelope.fa-lg
+                        | you got email from accont
+                    li
+                        i.far.fa-money-bill-alt.fa-lg
+                        | you got money from work in accont
+                    li
+                        i.far.fa-thumbs-up.fa-lg
+                        | you got like from client
+                    li
+                        i.far.fa-envelope.fa-lg
+                        | you got email from accont
+                    li
+                        i.far.fa-money-bill-alt.fa-lg
+                        | you got money from work in accont
+            .noti-foot.text-center: a(href="#") View All Notifications
