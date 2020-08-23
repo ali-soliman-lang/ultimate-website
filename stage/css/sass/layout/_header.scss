@@ -1,19 +1,25 @@
 .header {
   background: #fff;
   padding: 20px;
+  .header-icon {
+    background: #eae9e9;
+    padding: 10px;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.4s;
+    &:hover {
+      background: #292c33;
+      color: #fff;
+    }
+  }
   .toggle-sidebar {
     cursor: pointer;
   }
   .notifications-container {
     display: inline-block;
     margin-left: 20px;
-    .toggle-notifications {
-      background: #f9f9f9;
-      padding: 10px;
-      border-radius: 50%;
-      color: #555;
-      cursor: pointer;
-    }
     .dropdown-menu {
       min-width: 600px;
       border: none;
