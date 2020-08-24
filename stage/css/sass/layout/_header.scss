@@ -5,7 +5,7 @@
     background: #eae9e9;
     padding: 10px;
     border-radius: 50%;
-    color: #555;
+    color: #27ae60;
     cursor: pointer;
     margin-left: 10px;
     transition: 0.4s;
@@ -16,6 +16,9 @@
   }
   .toggle-sidebar {
     cursor: pointer;
+    &:hover {
+      color: #27ae60;
+    }
   }
   .notifications-container {
     display: inline-block;
@@ -109,6 +112,7 @@
       .user-info {
         h3 {
           font-weight: bold;
+          color: #27ae60;
         }
         p {
           color: #888;

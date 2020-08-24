@@ -11,12 +11,34 @@ $themes: (
   orange-theme: (
     color: #d35400,
   ),
+  pink-theme: (
+    color: #f6117c,
+  ),
 );
 
 @each $themes, $map in $themes {
   .#{$themes} {
+    $color: map-get($map, color);
     .page .page-head .page-title {
-      color: map-get($map, color);
+      color: $color;
+    }
+    .page .sidebar .links-area .child-links a:hover:before {
+      background-color: $color;
+    }
+    .header .toggle-sidebar:hover {
+      color: $color;
+    }
+    .header .usermenu-container .dropdown-menu .user-info h3 {
+      color: $color;
+    }
+    .header .header-icon {
+      color: $color;
+    }
+    .page .sidebar .logo-area {
+      color: $color;
+    }
+    .setting-box .toggle-settings {
+      color: $color;
     }
   }
 }
