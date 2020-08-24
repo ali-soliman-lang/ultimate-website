@@ -6,16 +6,16 @@ $themes: (
     color: #2980b9,
   ),
   red-theme: (
-    #c0392b,
+    color: #c0392b,
   ),
   orange-theme: (
-    #d35400,
+    color: #d35400,
   ),
 );
 
 @each $themes, $map in $themes {
   .#{$themes} {
-    .classname {
+    .page .page-head .page-title {
       color: map-get($map, color);
     }
   }

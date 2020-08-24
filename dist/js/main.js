@@ -26,6 +26,16 @@ $(function () {
     $(this).find("i").toggleClass("fa-spin");
     $(this).parent().toggleClass("hide-setting");
   });
+
+  // switch colors theme
+  var classes = [];
+  $(".color-options li").each(function () {
+    classes.push($(this).data("theme"));
+  });
+  $(".color-options li").on("click", function () {
+    $(this).addClass("active").siblings().removeClass("active");
+    $("body").removeClass(classes.join(" ")).addClass($(this).data("theme"));
+  });
 });
 
 var elem = document.documentElement;
